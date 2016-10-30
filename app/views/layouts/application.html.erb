@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MyRubyBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+<title>MyRubyStore</title>
+
+ <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+ 
+ 
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ <%= csrf_meta_tags %>
+
 </head>
-<body>
-<h1>testing css</h1>
-<%= yield %>
+
+<body >
+
+
+
+<div id="page-wrap">
+    <!-- all websites HTML here -->
+  
+		<div id="Main-Header">
+			<nav>
+				<ul class="main-nav"> 
+				    <li><%= link_to "Home",root_path%> </li>
+					<li> <%= link_to "Teams",page_teams_path%>  </li>
+					<li> <%= link_to "Leagues",page_leagues_path%> </li>
+					<li> <%= link_to "Fixtures",page_fixtures_path%>  </li>
+					<li> <%= link_to "Feautures",page_features_path%>  </li>		     
+				</ul>
+		
+			</nav>
+			
+		</div>
+
+	<%= yield %>
+</div>
+	
 
 </body>
 </html>
