@@ -10,6 +10,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    find_post
   end
 
   # GET /posts/new
@@ -71,4 +72,8 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:tittle, :body, :image)
     end
+end
+
+def find_post
+    @post = Post.find(params[:id])
 end

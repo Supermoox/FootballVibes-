@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'page/index'
 
   get 'page/teams'
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
   get 'page/fixtures'
 
   get 'page/features'
+  get 'page/posts'
 
   resources :posts
   get 'home/index'

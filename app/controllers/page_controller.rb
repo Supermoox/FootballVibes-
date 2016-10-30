@@ -13,4 +13,6 @@ class PageController < ApplicationController
 
   def features
   end
+
+
 end
