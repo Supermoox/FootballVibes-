@@ -20,12 +20,11 @@
 				<ul class="nav nav-tabs" > 
 				    <li><%= link_to "Home",root_path%> </li>
 					<li> <%= link_to "Teams",page_teams_path%>  </li>
-					<li> <%= link_to "Leagues",page_leagues_path%> </li>
+	
 					<li> <%= link_to "Fixtures",page_fixtures_path%>  </li>
-					<li> <%= link_to "Feautures",page_features_path%>  </li>
+		
 				    <li><%= link_to "Posts", posts_path%> </li>
-				    <li><%= link_to "Contacts",root_path%> </li>
-				    <li><%= link_to "Resources",root_path%> </li>
+		
 
 				    <% if current_user %>
 			       		 <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %> </li>
