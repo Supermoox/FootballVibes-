@@ -8,6 +8,9 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '301defacc4daab5fd4709dd14e44c00158f2059561a11127faa2e475d2cda89661445b6f630019243af61a1343de602e1f15c3ce728223e50647d43f99be139e'
 
+config.mailer_sender = "onemoox@mail.com"
+
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
